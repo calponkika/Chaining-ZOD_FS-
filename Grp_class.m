@@ -1,5 +1,4 @@
 function G=Grp_class (M1)
-
 M=unique(M1,'rows'); 
 T1=M(:,1:end-1);
 T=M{:,end};
@@ -27,9 +26,9 @@ end
        N{i,1}='R2L';
  end       
   end
- G1=cell2table(N);
- G=[T1 G1];
- Catg=categorical(N);
+G1=cell2table(N);
+G=[T1 G1];
+Catg=categorical(N);
 Cats=categories(Catg);
 Occ=countcats(Catg);
 T=zeros(1,length(Occ));
